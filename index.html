@@ -60,6 +60,28 @@
             transform: rotate(-1deg);
         }
 
+        /* Sketchy Circle for Images */
+        .sketch-circle {
+            width: 80px;
+            height: 80px;
+            border: 2px solid #2d2d2d;
+            border-radius: 50% 45% 52% 48% / 48% 52% 45% 50%;
+            box-shadow: 3px 3px 0px 0px #2d2d2d;
+            background-color: #fff;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            transition: transform 0.2s;
+        }
+
+        .sketch-circle img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
         /* Markdown bold styling tweak */
         strong {
             font-weight: 800;
@@ -151,7 +173,12 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <!-- Card -->
                 <article class="sketch-box p-6 h-full flex flex-col">
-                    <h3 class="text-2xl font-bold mb-3" data-editable="true">מופע "קסמי אמונה" - אבי באט</h3>
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="sketch-circle">
+                            <img src="assets/images/magic.png" alt="אבי באט">
+                        </div>
+                        <h3 class="text-2xl font-bold" data-editable="true">מופע "קסמי אמונה" - אבי באט</h3>
+                    </div>
                     <p class="text-gray-700 leading-relaxed" data-editable="true">מופע קסמים ייחודי ועוצר נשימה המשלב
                         קסמים מקצועיים ברמה גבוהה לצד תכנים ערכיים וחינוכיים. דרך הקסם פוגש הקהל מסרים של אמון בטוב,
                         ויתור וראית האחר חשיבה חיובית והסתכלות מיטיבה על המציאות. מופע שמצליח לרתק ילדים, להצחיק
@@ -160,8 +187,13 @@
 
                 <!-- Card -->
                 <article class="sketch-box p-6 h-full flex flex-col">
-                    <h3 class="text-2xl font-bold mb-3" data-editable="true">מופע קסמים לילדים עם נעמיקו הקוסם - נעם שר
-                        אבי</h3>
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="sketch-circle">
+                            <img src="assets/images/magic.png" alt="נעמיקו">
+                        </div>
+                        <h3 class="text-2xl font-bold" data-editable="true">מופע קסמים לילדים עם נעמיקו הקוסם - נעם שר
+                            אבי</h3>
+                    </div>
                     <p class="text-gray-700 leading-relaxed" data-editable="true">מופע קסמים ואפקטים חזותיים לילדים ולכל
                         המשפחה בהגשת הקוסם - נעמיקו! - נעם שר אבי, מופע מרהיב ומרגש. מלא בהומור ובשיתוף הקהל. קסמים,
                         אומנות חושים ואפקטים מפתיעים – גם הגדולים נהנים!</p>
@@ -169,7 +201,12 @@
 
                 <!-- Card -->
                 <article class="sketch-box p-6 h-full flex flex-col md:col-span-2">
-                    <h3 class="text-2xl font-bold mb-3" data-editable="true">מופע להטוטים מרהיב ומצחיק - מופאש</h3>
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="sketch-circle">
+                            <img src="assets/images/juggling.png" alt="מופאש">
+                        </div>
+                        <h3 class="text-2xl font-bold" data-editable="true">מופע להטוטים מרהיב ומצחיק - מופאש</h3>
+                    </div>
                     <p class="text-gray-700 leading-relaxed" data-editable="true">מופע להטוטים בשילוב קטעים הומוריסטיים.
                         2 להטוטנים ו-45 דקות מלאות ברגעי שיא של הנאה - כדורים, לפידים, חד אופן, חד אופן ג'ירף, סכינים,
                         להטוטי אש ועוד. המופע מרתק ומצחיק ומיועד לכל המשפחה, המופע מלווה במוזיקה מרעננת ושמחה.</p>
@@ -187,7 +224,12 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <!-- Card -->
                 <article class="sketch-box p-6 bg-white">
-                    <h3 class="text-2xl font-bold mb-3" data-editable="true">גלגולה של מגילה - תיאטרון נביעה</h3>
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="sketch-circle">
+                            <img src="assets/images/theater.png" alt="תיאטרון">
+                        </div>
+                        <h3 class="text-2xl font-bold" data-editable="true">גלגולה של מגילה - תיאטרון נביעה</h3>
+                    </div>
                     <p class="text-gray-700 mb-4" data-editable="true">עלילה סוחפת ומצחיקה על כוחה של האמונה. מגילת אסתר
                         מתגלגלת לידיו של צ׳יקו הגנב, אך ברגע שהוא מתוודע לסיפורה המסתורי הוא יוצא למסע מופלא ומרתק,
                         וחייו משתנים מן הקצה אל הקצה.</p>
@@ -197,8 +239,14 @@
 
                 <!-- Card -->
                 <article class="sketch-box p-6 bg-white">
-                    <h3 class="text-2xl font-bold mb-3" data-editable="true">שכונת השמחה של רעותי - רעותי כוכבת הילדים
-                    </h3>
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="sketch-circle">
+                            <img src="assets/images/character.png" alt="רעותי">
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3" data-editable="true">שכונת השמחה של רעותי - רעותי כוכבת
+                            הילדים
+                        </h3>
+                    </div>
                     <p class="text-gray-700" data-editable="true">בשכונה של רעותי כולם היו עצובים, עד שהכול השתנה -
                         מגילת אסתר הקדומה הגיעה לשכונה, והביאה איתה אור ושמחה לכולם. אבל אז הופיעה גברת זרש המרשעת שהיא
                         ”אלרגית לשמחה“ והחליטה לקרוע את המגילה ולהעלים אותה. בהצגה, יוצאת רעותי למסע להחזרת חלקי המגילה,
@@ -207,7 +255,12 @@
 
                 <!-- Card -->
                 <article class="sketch-box p-6 bg-white">
-                    <h3 class="text-2xl font-bold mb-3" data-editable="true">המסע לשמחה - תיאטרון שחמט</h3>
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="sketch-circle">
+                            <img src="assets/images/theater.png" alt="שמחה">
+                        </div>
+                        <h3 class="text-2xl font-bold" data-editable="true">המסע לשמחה - תיאטרון שחמט</h3>
+                    </div>
                     <p class="text-gray-700 mb-4" data-editable="true">הצגה תיאטרלית מרגשת, מצחיקה ומלאת לב על מסע אל
                         השמחה. דרך דמויות צבעוניות, הומור וסיטואציות מחיי היום־יום, הקהל פוגש את השאלה מהי שמחה אמיתית
                         ואיך מוצאים אותה גם בזמנים מורכבים וגם בדברים הקטנים והפשוטים של החיים.</p>
@@ -217,8 +270,13 @@
 
                 <!-- Card -->
                 <article class="sketch-box p-6 bg-white">
-                    <h3 class="text-2xl font-bold mb-3" data-editable="true">קסמי מדע לפורים - הצגה בשילוב קסמים -
-                        תיאטרון שחמט</h3>
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="sketch-circle">
+                            <img src="assets/images/magic.png" alt="מדע">
+                        </div>
+                        <h3 class="text-2xl font-bold" data-editable="true">קסמי מדע לפורים - הצגה בשילוב קסמים -
+                            תיאטרון שחמט</h3>
+                    </div>
                     <p class="text-gray-700 mb-4" data-editable="true">שני אחים מדענים, הפוכים באופיים, נדרשים לשתף
                         פעולה כדי לארגן תערוכה מדעית בשושן הבירה. האם יצליחו למרות מזימת המן הרשע? במהלך ההצגה נחשף הקהל
                         לקסמי אש וטלפתיה מלהיבים – שהם למעשה ניסויים מדעיים מרתקים.</p>
@@ -271,7 +329,12 @@
             <div class="space-y-6">
                 <!-- Row Card -->
                 <article class="sketch-box p-6 bg-[#fffaf0]">
-                    <h3 class="text-2xl font-bold mb-2" data-editable="true">מופע "שירת הדממה" - טובה גדות</h3>
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="sketch-circle">
+                            <img src="assets/images/party.png" alt="טובה גדות">
+                        </div>
+                        <h3 class="text-2xl font-bold" data-editable="true">מופע "שירת הדממה" - טובה גדות</h3>
+                    </div>
                     <p class="text-gray-700" data-editable="true">מופע אמונה עוצמתי ומרגש של אמא לילדה מיוחדת, סיפור
                         אישי הנוגע בכל אשה, לצד שירים מוכרים ומקוריים. המופע נוגע בנקודות הכי עמוקות ופנימיות ומביא
                         לשמחה אמיתית של הנפש. המופע מלווה בתמונות וסרטונים מההתמודדות של טובה גדות עם התסמונת הנדירה של
